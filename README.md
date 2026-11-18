@@ -38,8 +38,11 @@ I used the Online Hash Crack PDF Hash Extractor to extract the password hash fro
 
 Website: https://www.onlinehashcrack.com/tools-pdf-hash-extractor.php
 
-![PDF Hash Extraction](step1.1.png)
-![PDF ](step1.2.png)
+![PDF Hash Extraction](screenshots%20w3/step1.1.png)
+
+and then upload the pdf file :
+
+![PDF ](screenshots%20w3/step1.2.png)
 
 ### Step 2 – Creating the Hash File
 
@@ -49,13 +52,13 @@ I created a text file using Nano in the Kali Linux terminal:
 nano hash.txt
 ```
 
-![Creating Hash File](step1.3.png)
+![Creating Hash File](screenshots%20w3/step1.3.png)
 
 ### Step 3 – Saving the Extracted Hash
 
 I copied the extracted hash and pasted it into `hash.txt`, then saved the file.
 
-![Hash Saved](step1.4.png)
+![Hash Saved](screenshots%20w3/step1.4.png)
 
 ### Step 4 – Running John the Ripper
 
@@ -67,7 +70,7 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 
 John the Ripper tested password candidates from the wordlist against the extracted hash.
 
-![John the Ripper Execution](step1.5.png)
+![John the Ripper Execution](screenshots%20w3/step1.5.png)
 
 ### Step 5 – Displaying the Recovered Password
 
@@ -77,7 +80,7 @@ After the cracking process, I used the following command to display the recovere
 john --show hash.txt
 ```
 
-![Recovered Password](step1.6.png)
+![Recovered Password](screenshots%20w3/step1.6.png)
 
 ### Step 6 – Opening the PDF
 
@@ -108,26 +111,26 @@ The process involved extracting the hash using the Hash Calculator and then subm
 I visited the NetworkWalks Hash Calculator website.
 
 Website: https://networkwalks.com/hash-calculator/
-![Hash Calculator](step2.1.png)
+![Hash Calculator](screenshots%20w3/step2.1.png)
 
 ### Step 2 – Extracting the PDF Hash
 
 I uploaded the password-protected PDF file to the Hash Calculator and extracted its hash.
 
-![Hash Calculator](step2.2.png)
+![Hash Calculator](screenshots%20w3/step2.2.png)
 
 ### Step 3 – Accessing the Password Cracker
 
 I visited the NetworkWalks Password Cracker website.
 
 Website: https://networkwalks.com/password-cracker/
-![Hash Calculator](step2.3.png)
+![Hash Calculator](screenshots%20w3/step2.3.png)
 
 ### Step 4 – Uploading the Hash
 
 I submitted the extracted hash to the Password Cracker tool.
 
-![Uploading Hash](step2.4.png)
+![Uploading Hash](screenshots%20w3/step2.4.png)
 
 ### Step 5 – Starting the Cracking Process
 
@@ -135,7 +138,7 @@ I clicked on **Start Cracking** to begin the password recovery process.
 
 Once the process was completed, the tool displayed the recovered password.
 
-![Password Cracking](step2.5.png)
+![Password Cracking](screenshots%20w3/step2.5.png)
 
 ### Step 6 – Opening the PDF
 
@@ -157,9 +160,9 @@ Both approaches were successfully used to recover the passwords of the three pro
 
 ## Results Overview
 
-![Successfully Opened PDF](PASS1.png)
-![Successfully Opened PDF](PASS2.png)
-![Successfully Opened PDF](PASS3.png)
+![Successfully Opened PDF](screenshots%20w3/PASS1.png)
+![Successfully Opened PDF](screenshots%20w3/PASS2.png)
+![Successfully Opened PDF](screenshots%20w3/PASS3.png)
 
 ---
 
